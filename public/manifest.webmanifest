@@ -1,0 +1,19 @@
+{
+  "name": "Crucero Premium",
+  "short_name": "Crucero",
+  "description": "Nuestro crucero mediterraneo 8-15 agosto 2026",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#081120",
+  "theme_color": "#081120",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "crucero-premium",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build:offline": "next build",
+    "serve:offline": "npx serve out -l 4173",
+    "photos:download": "powershell -ExecutionPolicy Bypass -File ./scripts/download-wikimedia-photos.ps1"
+  },
+  "dependencies": {
+    "framer-motion": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-confetti": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "25.9.3",
+    "@types/react": "19.2.17",
+    "typescript": "6.0.3"
+  }
+}

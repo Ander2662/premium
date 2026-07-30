@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Crucero Premium</title>
+  <desc id="desc">Icono de barco en el mar para la app del crucero.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081120"/>
+      <stop offset="100%" stop-color="#0f2a4d"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1c4f7a"/>
+      <stop offset="100%" stop-color="#2a6ea0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="110" fill="url(#bg)"/>
+  <circle cx="384" cy="126" r="42" fill="#f0c060" opacity="0.9"/>
+  <path d="M65 332h382v84H65z" fill="url(#sea)"/>
+  <path d="M104 328c24 22 52 22 76 0s52-22 76 0 52 22 76 0 52-22 76 0 52 22 76 0v34H104z" fill="#2f80b8"/>
+  <path d="M250 155h18v113h-18z" fill="#f3f5f8"/>
+  <path d="M268 169l106 45-106 45z" fill="#f0c060"/>
+  <path d="M150 286h230l-30 42H180z" fill="#d7dee8"/>
+  <path d="M168 286h194l-18 24H186z" fill="#ffffff" opacity="0.9"/>
+</svg>

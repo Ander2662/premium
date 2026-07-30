@@ -24,10 +24,16 @@ Publicar la web gratis en Cloudflare Pages y dejarla preparada para uso sin cobe
 
 ## 3) Configuracion de build
 Usar estos valores:
-- Framework preset: Next.js (Static HTML Export) o None si no aparece.
+- Framework preset: None (recomendado para export estatico).
 - Build command: npm run build
 - Build output directory: out
 - Root directory: /
+- Deploy command: (vacio)
+
+Importante:
+- No usar `npx wrangler deploy` en este proyecto.
+- No usar OpenNext/Workers mientras `next.config.mjs` tenga `output: 'export'`.
+- Si Cloudflare muestra deteccion automatica de Next.js Worker, desactivarla y mantener modo Pages estatico.
 
 No hacen falta variables de entorno para este proyecto.
 
@@ -67,3 +73,4 @@ No hacen falta variables de entorno para este proyecto.
 - Si no se actualiza la app: cerrar y abrir de nuevo Safari, luego reabrir desde icono.
 - Si faltan fotos offline: abrir la web con conexion y esperar unos minutos para que cachee recursos.
 - Si iPhone limpia cache por falta de espacio: liberar almacenamiento y repetir precarga.
+

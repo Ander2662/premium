@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'crucero-v3';
+const CACHE_VERSION = 'crucero-v4';
 const APP_SHELL_CACHE = `app-shell-${CACHE_VERSION}`;
 const IMAGE_CACHE = `images-${CACHE_VERSION}`;
 
@@ -6,11 +6,32 @@ const APP_SHELL_ASSETS = [
   '/',
   '/manifest.webmanifest',
   '/icons/icon.svg',
+  '/placeholder-photo.svg',
+];
+
+const PRELOAD_IMAGES = [
+  '/photos/barcelona/1.jpg',
+  '/photos/barcelona/2.jpg',
+  '/photos/navegacion-1/1.jpg',
+  '/photos/valeta/1.jpg',
+  '/photos/valeta/2.jpg',
+  '/photos/navegacion-2/1.jpg',
+  '/photos/santorini/1.jpg',
+  '/photos/santorini/2.jpg',
+  '/photos/kusadasi/1.jpg',
+  '/photos/kusadasi/2.jpg',
+  '/photos/mykonos/1.jpg',
+  '/photos/mykonos/2.jpg',
+  '/photos/atenas/1.jpg',
+  '/photos/atenas/2.jpg',
 ];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(APP_SHELL_CACHE).then((cache) => cache.addAll(APP_SHELL_ASSETS))
+    Promise.all([
+      caches.open(APP_SHELL_CACHE).then((cache) => cache.addAll(APP_SHELL_ASSETS)),
+      caches.open(IMAGE_CACHE).then((cache) => cache.addAll(PRELOAD_IMAGES)),
+    ])
   );
   self.skipWaiting();
 });

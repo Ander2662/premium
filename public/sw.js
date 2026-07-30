@@ -1,11 +1,11 @@
-const CACHE_VERSION = 'crucero-v4';
+const CACHE_VERSION = 'crucero-v5';
 const APP_SHELL_CACHE = `app-shell-${CACHE_VERSION}`;
 const IMAGE_CACHE = `images-${CACHE_VERSION}`;
 
 const APP_SHELL_ASSETS = [
   '/',
   '/manifest.webmanifest',
-  '/icons/icon.svg',
+  '/icons/icon.png',
   '/placeholder-photo.svg',
 ];
 

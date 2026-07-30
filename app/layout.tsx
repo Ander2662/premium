@@ -38,8 +38,8 @@ export default function RootLayout({children}:{children:React.ReactNode}) {
         <meta name="apple-mobile-web-app-capable" content="yes"/>
         <meta name="apple-mobile-web-app-title" content="Crucero Premium"/>
         <meta name="mobile-web-app-capable" content="yes"/>
-        <link rel="icon" href="/icons/icon.svg" type="image/svg+xml"/>
-        <link rel="apple-touch-icon" href="/icons/icon.svg"/>
+        <link rel="icon" href="/icons/icon.png" type="image/png"/>
+        <link rel="apple-touch-icon" href="/icons/icon.png"/>
         <style>{`
           *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
           html,body{width:100%;height:100%;overflow:hidden;background:#081120}

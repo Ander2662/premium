@@ -12,25 +12,25 @@ export const itinerary = [
   {
     id: 1, city: 'Barcelona', date: '2026-08-08', folder: 'barcelona',
     x: 20, y: 34, title: 'Salida', emoji: '⛵',
-    description: 'Zarpamos desde el puerto de Barcelona, puerta del Mediterráneo. Una ciudad que ayudó a unirnos más de lo que pensamos.',
+    description: 'Todo viaje tiene un punto de partida, no siempre empieza cuando subes al barco. Barcelona forma parte de nuestra historia, ayudó a que nos conociéramos. Hoy zarpamos desde aquí, pero lo importante empezó bastante antes',
     photos: [...localPhotos('barcelona'), ...placeholderPhotos(2)]
   },
   {
     id: 2, city: 'Navegación', date: '2026-08-09', folder: 'navegacion-1',
     x: 30, y: 60, title: 'Mar abierto', emoji: '🌊',
-    description: 'Primer día de viaje. Horizonte infinito, brisa salada y tú a mi lado. No necesito más.',
+    description: 'Los griegos pensaban que el Mediterráneo estaba bajo la protección de Poseidón y que ningún día en el mar era igual al anterior. Hoy no tenemos ningún destino por delante, quizá por eso sea uno de los mejores días del viaje.',
     photos: [...singlePhoto('navegacion-1'), ...singlePlaceholder()]
   },
   {
     id: 3, city: 'Valeta', date: '2026-08-10', folder: 'valeta',
     x: 46, y: 58, title: 'Malta', emoji: '🏰',
-    description: 'La ciudad construida por caballeros para caballeros. Bastiones barrocos, Gran Puerto y la historia de los Caballeros de Malta.',
+    description: 'La ciudad construida por caballeros para caballeros, llena de historia. Aprovechemos el día para escribir la nuestra.',
     photos: [...localPhotos('valeta'), ...placeholderPhotos(2)]
   },
   {
     id: 4, city: 'Navegación', date: '2026-08-11', folder: 'navegacion-2',
     x: 60, y: 70, title: 'Rumbo a Grecia', emoji: '🧭',
-    description: 'Cruzamos el Mediterráneo Oriental. Mañana amanece Santorini en el horizonte.',
+    description: 'Los barcos antiguos llevaban un cuaderno de bitacora donde quedaba registrado todo lo importante del viaje. Despues de darle muchas vueltas, me he dado cuenta de que nosotros llevamos bastante tiempo navegando... pero hay un pequeno detalle que nunca hemos dejado por escrito. Tecnicamente, creo que estamos incurriendo en una irregularidad.',
     photos: [...singlePhoto('navegacion-2'), ...singlePlaceholder()]
   },
   {
@@ -42,19 +42,19 @@ export const itinerary = [
   {
     id: 6, city: 'Kusadasi', date: '2026-08-13', folder: 'kusadasi',
     x: 83, y: 53, title: 'Turquía', emoji: '🕌',
-    description: 'Puerto turco a las puertas de Éfeso. La biblioteca de Celso, el gran teatro y el Mediterráneo más turquesa.',
+    description: 'Bienvenida a Turquía. La mayoría de la gente viene por su historia, por lugares como Éfeso. Nosotros decimos que vendremos por razones menos culturales: tú por algún retoquito y yo por recuperar un poco de dignidad capilar. Por desgracia, hoy solo toca hacer turismo.',
     photos: [...localPhotos('kusadasi'), ...placeholderPhotos(2)]
   },
   {
     id: 7, city: 'Mykonos', date: '2026-08-14', folder: 'mykonos',
     x: 76, y: 53, title: 'Islas griegas', emoji: '🌬️',
-    description: 'La isla de los vientos. Molinos blancos, Little Venice y las calles más fotogénicas del Egeo.',
+    description: 'Mykonos fue durante siglos un refugio para pescadores y marineros. Los molinos existen porque el viento era esencial para la vida de la isla.',
     photos: [...localPhotos('mykonos'), ...placeholderPhotos(2)]
   },
   {
     id: 8, city: 'Atenas', date: '2026-08-15', folder: 'atenas',
     x: 69, y: 49, title: 'La Acrópolis', emoji: '🏛️',
-    description: 'Última escala: la cuna de la civilización occidental. El Partenón, la Acrópolis y el vuelo de vuelta con la maleta llena de recuerdos.',
+    description: 'Llegar al último puerto da un poco de pena, pero también significa que el viaje ha merecido la pena. Ojalá dentro de unos años veamos estas fotos y recordemos el viaje con una pregunta que ya iba siendo hora de hacer.',
     photos: [...localPhotos('atenas'), ...placeholderPhotos(2)]
   },
 ]

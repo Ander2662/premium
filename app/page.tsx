@@ -6,6 +6,7 @@ import {itinerary} from '../data/itinerary'
 import CruiseMap from '../components/CruiseMap'
 import Gallery from '../components/Gallery'
 import Birthday from '../components/Birthday'
+import Proposal from '../components/Proposal'
 import {unlocked} from '../lib/unlock'
 
 
@@ -167,6 +168,9 @@ export default function Page() {
 
               {/* Birthday special */}
               {selected.city === 'Santorini' && <Birthday/>}
+
+              {/* Day 4 special */}
+              {selected.id === 4 && <Proposal/>}
 
               {/* Gallery */}
               {selected.photos && selected.photos.length > 0 && (

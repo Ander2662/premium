@@ -1,2 +1,2 @@
 
-export const unlocked=(d:string)=>false;//new Date()>=new Date(d);
+export const unlocked=(d:string)=>new Date()>=new Date(d);
